@@ -16,7 +16,8 @@
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-        <link rel="shortcut icon" href="img/logo.png" type="image/png">
+
+    <link rel="shortcut icon" href="img/logo.png" type="image/png">
     <link rel="icon" href="img/logo.png" type="image/png">
 
     <!-- Custom styles for this template -->
@@ -29,16 +30,16 @@
     <header><a class="btn btn-secondary" href="index.html#portfolio">Back to Portfolio</a>
     </header>
 <body class="page" id="page-top">
-     <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
+  <nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
       <div class="container">
-          <a class="page-scroll" href="#page-top"><img src="img/logo.png" width="75" height="75" class="img-responsive" alt="Chaitrali Gandhi"></a>
+          <a class="navbar-brand js-scroll-trigger" href="#page-top"><img id="brand-img" src="img/logo.png" width="75" height="75" max-width=100% max-height=100% class="img-responsive" alt="Chaitrali Gandhi"></a>
         <a class="navbar-brand js-scroll-trigger" href="#page-top">Chaitrali Gandhi</a>
 
         <button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           Menu
           <i class="fa fa-bars"></i>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+       <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item mx-0 mx-lg-1">
               <a class="nav-link py-3 px-0 px-lg-3 rounded js-scroll-trigger" href="index.html#portfolio">Portfolio</a>
@@ -56,6 +57,7 @@
         </div>
       </div>
     </nav>
+
 
 
 <div class="container">
@@ -114,7 +116,7 @@
         <hr>
          <div class="col-md-12">
         <p>
-            <li><img src="img/marketing.png" width="30" height="30"> Literature Survey
+            <li><img src="img/test.png" width="30" height="30"> Literature Survey
             <ul>
                 <li>Performed Literature Survey to know about the current research in Keystroke Dynamics and different methods used to prove influence of emotions</li></ul>
             <li>Implementation
@@ -152,7 +154,8 @@
                                 
     </div>
     </div> 
-      <footer class="footer text-center" id="contact">
+  
+    <footer class="footer text-center" id="contact">
         <div class="footer-above">
           <div class="container">
             <div class="row">
@@ -165,13 +168,18 @@
                     </a>
                   </li>
                   <li class="list-inline-item">
-                    <a class="btn-social btn-outline" href="mailto:ckgandhi@umich.edu">
+                    <a class="btn-social btn-outline" href="mailto:ckgandhi@umich.edu" target="_blank">
                       <i class="fa fa-fw fa-envelope"></i>
                     </a>
                   </li>
                   <li class="list-inline-item">
-                    <a class="btn-social btn-outline" href="www.linkedin.com/in/chaitraligandhi">
+                    <a class="btn-social btn-outline" href="https://www.linkedin.com/in/chaitraligandhi/">
                       <i class="fa fa-fw fa-linkedin-square"></i>
+                    </a>
+                  </li>
+              <li class="list-inline-item">
+                    <a class="btn-social btn-outline" href="+1(971)-330-9314" target="_blank">
+                      <i class="fa fa-fw fa-phone"></i>
                     </a>
                   </li>
             
@@ -182,13 +190,32 @@
       </div>
       
     
+    
     </footer>
-        <div class="copyright py-4 text-center text-white">
+      <div class="copyright py-4 text-center text-white">
       <div class="container">
         <small>Copyright &copy; Chaitrali Gandhi 2017</small>
       </div>
+      <div><p>Icons made by Flat-Icons<a href="http://www.freepik.com"></p></div>
     </div>
-       <script src="vendor/jquery/jquery.min.js"></script>
+
+  <script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+   <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/popper/popper.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
 
